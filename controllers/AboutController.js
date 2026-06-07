@@ -1,4 +1,4 @@
-const About = require('../models/About')
+const About = require('../Models/About')
 
 class AboutController {
 

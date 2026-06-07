@@ -1,5 +1,5 @@
 // controllers/ProjectController.js
-const User = require("../models/User");
+const User = require("../Models/User");
 const cloudinary = require("cloudinary").v2;
 const fs = require("fs");
 

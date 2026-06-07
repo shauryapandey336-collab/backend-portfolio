@@ -1,5 +1,5 @@
 // controllers/ProjectController.js
-const Project = require("../models/project");
+const Project = require("../Models/project");
 const cloudinary = require("cloudinary").v2;
 const fs = require("fs");
 
