@@ -14,7 +14,7 @@ const fileUpload = require("express-fileupload");
 
 // image and file handelling 
 app.use(fileUpload({
-    useTempFiles: true,
+  useTempFiles: true,
 
 }));
 
@@ -39,5 +39,5 @@ app.use('/api', web);
 
 // Server
 app.listen(process.env.PORT, () => {
-    console.log(`server start on port ${process.env.PORT}`);
+  console.log(`server start on port ${process.env.PORT}`);
 });
