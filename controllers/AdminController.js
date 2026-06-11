@@ -59,10 +59,10 @@ class AdminController {
 
             res.cookie("token", token, {
                 httpOnly: true,
-                secure: false,
+                secure: true,
+                sameSite: "none",
                 maxAge: 3600000,
             });
-
             res.status(200).json({ message: "Login success", token });
 
         } catch (error) {
@@ -89,7 +89,7 @@ class AdminController {
                 return res.status(404).json({ message: "Admin not found" });
             }
 
-            res.status(200).json({adminData});
+            res.status(200).json({ adminData });
         } catch (error) {
             console.log(error);
             res.status(500).json({ message: "Internal Server Error" });
