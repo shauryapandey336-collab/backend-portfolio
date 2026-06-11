@@ -26,8 +26,8 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      // "http://localhost:5173",
-      "https://celadon-pony-ef6e60.netlify.app"
+      "https://shauryapandey.netlify.app",
+      "http://localhost:5173",
     ],
     credentials: true,
   })
